@@ -11,6 +11,7 @@ form.onsubmit = e => {
     let password = passwordInput.value;
     
     if (emailValidation(emailInput.value) && password.length >= 8) {
+        // Si les donnees sont valides , le formulaire prend un fond vert ...
         form.style.backgroundColor = '#a7ff3342';
         hideMessage(notificationElt);
     } else {
